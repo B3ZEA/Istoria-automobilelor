@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Acasă - Istoria Automobilelor</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stil specific pentru evoluția vizuală */
+        .evolutie-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            background: rgba(255, 255, 255, 0.4);
+            padding: 20px;
+            border: 2px dashed #8d6e63;
+            margin: 30px 0;
+        }
+        .evolutie-item { text-align: center; width: 40%; }
+        .evolutie-item img { width: 100%; border: 5px solid #fff; }
+        .sageata { font-size: 50px; color: #3e2723; font-weight: bold; }
+        .caption { font-style: italic; font-size: 0.9em; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <header><h1>Istoria Automobilelor</h1></header>
+    <nav>
+        <a href="index.html">Acasă</a>
+        <a href="istorie.html">Istorie Completă</a>
+        <a href="bibliografie.html">Bibliografie</a>
+    </nav>
+
+    <div class="container">
+        <h2 class="page-title">Automobilul</h2>
+        <p>Automobilul nu a fost doar o invenție mecanică, ci catalizatorul celei mai mari schimbări sociale din istoria modernă. De la libertatea de mișcare individuală la restructurarea orașelor, mașina a redefinit conceptul de distanță.</p>
+
+        <div class="evolutie-container">
+            <div class="evolutie-item">
+                <img src="primamasina.jpg" alt="Benz 1886">
+                <div class="caption"><strong>1886:</strong> Benz Patent-Motorwagen<br>(0.75 CP, 16 km/h)</div>
+            </div>
+            <div class="sageata">➔</div>
+            <div class="evolutie-item">
+                <img src="concept.jpg" alt="Masina Moderna">
+                <div class="caption"><strong>Prezent:</strong> Bugatti Bolide<br>(1850 CP,500+ km/h)</div>
+            </div>
+        </div>
+
+        <p>Această lucrare analizează parcursul tehnologic de peste 250 de ani, structurat pe epoci de inovație, de la primele experimente cu abur, trecând prin epoca de aur a designului interbelic, până la vehiculele autonome ale viitorului apropiat.</p>
+    </div>
+</body>
+</html>

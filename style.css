@@ -1,0 +1,109 @@
+/* FUNDAL ȘI CORP */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f3e5ab; 
+    background-image: 
+        radial-gradient(circle at 10% 20%, rgba(92, 64, 51, 0.05) 0%, transparent 20%),
+        url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+    color: #4b3621;
+    line-height: 1.8;
+}
+
+/* GRUPARE HEADER ȘI NAV PENTRU A EVITA ÎNCĂLECAREA */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px; /* Înălțime fixă pentru titlu */
+    background-color: #3e2723;
+    color: #d7ccc8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001; /* Mai sus decât meniul */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+header h1 {
+    margin: 0;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+}
+
+nav {
+    position: fixed;
+    top: 60px; /* Începe exact unde se termină header-ul (60px) */
+    width: 100%;
+    height: 45px; /* Înălțime fixă pentru meniu */
+    background-color: #8d6e63;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    border-bottom: 2px solid #5d4037;
+}
+
+nav a {
+    color: #f3e5ab;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85em;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* CONTAINERUL DE CONȚINUT */
+.container {
+    max-width: 850px;
+    /* Margin-top trebuie să fie suma înălțimilor header (60) + nav (45) + spațiu extra */
+    margin: 140px auto 50px auto; 
+    padding: 40px;
+    background: rgba(255, 252, 235, 0.85); /* Un pic mai opac pentru lizibilitate */
+    border: 1px solid #d1b29a;
+    box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+h2 {
+    color: #5d4037;
+    border-bottom: 2px double #8d6e63;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+h3 {
+    color: #795548;
+    margin-top: 30px;
+}
+
+/* IMAGINI VINTAGE */
+.img-box {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border: 10px solid #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin: 25px 0;
+    filter: sepia(0.2) contrast(1.1);
+}
+
+/* LISTA BIBLIOGRAFIE */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 15px;
+    border-left: 3px solid #8d6e63;
+    padding-left: 15px;
+    list-style: none;
+}
